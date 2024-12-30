@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/demo-repository/static/css/main.f855e6bc.css",
+    "main.js": "/demo-repository/static/js/main.b822d5eb.js",
+    "static/js/453.20cdca75.chunk.js": "/demo-repository/static/js/453.20cdca75.chunk.js",
+    "static/media/zfit.png": "/demo-repository/static/media/zfit.761fd701480ee62bd6d0.png",
+    "index.html": "/demo-repository/index.html",
+    "main.f855e6bc.css.map": "/demo-repository/static/css/main.f855e6bc.css.map",
+    "main.b822d5eb.js.map": "/demo-repository/static/js/main.b822d5eb.js.map",
+    "453.20cdca75.chunk.js.map": "/demo-repository/static/js/453.20cdca75.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.b822d5eb.js"
+  ]
+}
