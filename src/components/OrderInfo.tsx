@@ -31,7 +31,7 @@ const OrderInfo = () => {
             <h3 className="platforms-title">Order on Popular Platforms</h3>
             <div className="platform-buttons">
               <a
-                href="https://www.zomato.com"
+                href="https://link.zomato.com/xqzv/rshare?id=1131557533056327c"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="platform-btn zomato-btn"
@@ -47,7 +47,7 @@ const OrderInfo = () => {
               </a>
 
               <a
-                href="https://www.swiggy.com"
+                href="https://www.swiggy.com/direct/brand/585107?source=swiggy-direct&subSource=generic"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="platform-btn swiggy-btn"
