@@ -4,27 +4,28 @@
   "description": "ZFIT - The McDonald's of healthy food. Cloud kitchen website with high-protein and anti-aging meals.",
   "private": true,
   "type": "module",
+  "homepage": "https://zfit.in",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "lucide-react": "^0.263.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.1",
-    "lucide-react": "^0.263.1"
+    "react-router-dom": "^6.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "gh-pages": "^5.0.0",
     "typescript": "^4.9.3",
-    "vite": "^4.1.0",
-    "gh-pages": "^5.0.0"
+    "vite": "^4.1.0"
   },
-  "homepage": "https://yourusername.github.io/zfit-in",
   "keywords": [
     "healthy food",
     "cloud kitchen",
@@ -35,4 +36,4 @@
   ],
   "author": "ZFIT Team",
   "license": "MIT"
-} 
+}

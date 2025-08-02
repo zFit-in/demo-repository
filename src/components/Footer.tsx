@@ -8,6 +8,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
+              <img src="/zfit.png" alt="ZFIT Logo" className="footer-logo-image" />
               <span className="footer-logo-text">ZFIT</span>
             </div>
             <p className="footer-tagline">
@@ -19,15 +20,15 @@ const Footer = () => {
             <h3>Contact Info</h3>
             <div className="contact-item">
               <Phone className="contact-icon" />
-              <span>+91 96934 38548</span>
+              <span>+91 98765 43210</span>
             </div>
             <div className="contact-item">
               <Mail className="contact-icon" />
-              <span>sahil.astralamind@gmail.com</span>
+              <span>hello@zfit.in</span>
             </div>
             <div className="contact-item">
               <MapPin className="contact-icon" />
-              <span>ZFIT, Munnekollal, Kundalahalli, Silver Springs Layout, Sai Baba Temple Road, Near HDFC Bank ATM, Marathahalli, Bangalore              </span>
+              <span>Your City, State - PIN</span>
             </div>
           </div>
 

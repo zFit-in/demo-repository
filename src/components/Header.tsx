@@ -14,6 +14,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
+            <img src="/zfit.png" alt="ZFIT Logo" className="logo-image" />
             <span className="logo-text">ZFIT</span>
           </div>
           
