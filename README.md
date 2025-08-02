@@ -190,7 +190,7 @@ This project is licensed under the MIT License.
 ## 📞 Contact
 
 - **Phone**: +91 96934 38548
-- **Email**: sahil.astralamind@gmail.com
+- **Email**: contact@zfit.in
 - **FSSAI License**: 21224008002624
 
 ---

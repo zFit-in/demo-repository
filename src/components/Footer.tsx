@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <div className="contact-item">
               <Mail className="contact-icon" />
-              <span>sahil.astralamind@gmail.com</span>
+              <span>contact@zfit.in</span>
             </div>
             <div className="contact-item">
               <MapPin className="contact-icon" />
