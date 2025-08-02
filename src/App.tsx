@@ -1,15 +1,27 @@
-import React from 'react';
-import logo from './zfit.png';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import MenuSection from './components/MenuSection';
+import OrderInfo from './components/OrderInfo';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <Header />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <HeroSection />
+            <OrderInfo />
+            <MenuSection />
+          </>
+        } />
+      </Routes>
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export default App; 

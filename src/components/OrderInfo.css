@@ -1,0 +1,244 @@
+.order-info {
+  background: var(--bg-white);
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.order-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.order-status {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg-gray);
+  border-radius: 1rem;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.status-dot.open {
+  background: var(--zfit-green);
+}
+
+.status-dot.closed {
+  background: #ef4444;
+}
+
+.status-text {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.order-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.order-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-gray);
+  border-radius: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.order-detail-item:hover {
+  transform: translateY(-2px);
+}
+
+.order-icon {
+  color: var(--zfit-green);
+  min-width: 24px;
+  margin-top: 0.25rem;
+}
+
+.order-detail-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.order-detail-content p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.order-note {
+  font-size: 0.875rem;
+  color: var(--zfit-accent-dark);
+  font-weight: 500;
+}
+
+.app-download-btn {
+  margin-top: 1rem;
+}
+
+/* Delivery Platforms Section */
+.delivery-platforms {
+  background: var(--bg-gray);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.platforms-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.platform-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.platform-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  min-width: 200px;
+}
+
+.platform-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.platform-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.platform-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.zomato-icon {
+  background: #e23744;
+}
+
+.swiggy-icon {
+  background: #fc8019;
+}
+
+.platform-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.platform-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.platform-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.external-link {
+  color: var(--text-secondary);
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Zomato and Swiggy specific styling */
+.zomato-btn:hover {
+  border: 2px solid #e23744;
+}
+
+.swiggy-btn:hover {
+  border: 2px solid #fc8019;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-info {
+    padding: 2rem 0;
+  }
+
+  .order-details {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .order-detail-item {
+    padding: 1rem;
+  }
+
+  .status-text {
+    font-size: 1rem;
+  }
+
+  .delivery-platforms {
+    padding: 1.5rem;
+  }
+
+  .platforms-title {
+    font-size: 1.25rem;
+  }
+
+  .platform-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .platform-btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+} 

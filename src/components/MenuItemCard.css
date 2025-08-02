@@ -1,0 +1,207 @@
+.menu-item-card {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  background: var(--bg-gray);
+}
+
+.menu-item-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.1) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.menu-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.menu-image.loaded {
+  opacity: 1;
+}
+
+.menu-item-card:hover .menu-image {
+  transform: scale(1.05);
+}
+
+.image-loading,
+.image-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-gray);
+  color: var(--text-secondary);
+  z-index: 2;
+}
+
+.loading-icon,
+.error-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+.image-loading span,
+.image-error span {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.menu-item-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.menu-item-header {
+  margin-bottom: 1rem;
+}
+
+.menu-item-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.menu-item-title h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.category-icon {
+  color: var(--zfit-green);
+  min-width: 20px;
+  margin-top: 0.25rem;
+}
+
+.menu-item-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.menu-item-description {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.menu-item-nutrition {
+  background: var(--zfit-green-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.nutrition-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.nutrition-item:last-child {
+  margin-bottom: 0;
+}
+
+.nutrition-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.nutrition-value {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.protein-highlight {
+  color: var(--zfit-green-dark);
+  font-size: 1rem;
+}
+
+.menu-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.menu-item-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.price-currency {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.price-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--zfit-green-dark);
+}
+
+.order-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .menu-item-image {
+    height: 150px;
+  }
+
+  .menu-item-content {
+    padding: 1rem;
+  }
+
+  .menu-item-title h3 {
+    font-size: 1.125rem;
+  }
+
+  .price-amount {
+    font-size: 1.25rem;
+  }
+
+  .order-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+} 

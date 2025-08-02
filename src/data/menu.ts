@@ -1,0 +1,184 @@
+import { MenuData } from '../types/menu';
+
+export const menuData: MenuData = {
+  categories: [
+    {
+      id: 'high-protein',
+      name: 'Just High Protein',
+      description: 'Pure protein power for your fitness goals',
+      items: [
+        {
+          id: 'grilled-chicken',
+          name: 'Grilled Chicken',
+          price: 219,
+          calories: 390,
+          protein: 59,
+          category: 'high-protein',
+          description: 'Perfectly grilled chicken breast with herbs and spices',
+          image: '/MenuImages/Grilled Chicken.jpg'
+        },
+        {
+          id: 'grilled-paneer',
+          name: 'Grilled Paneer',
+          price: 219,
+          calories: 600,
+          protein: 39,
+          category: 'high-protein',
+          description: 'Fresh paneer grilled to perfection',
+          isVegetarian: true,
+          image: '/MenuImages/Grilled Paneer .jpg'
+        },
+        {
+          id: 'poached-chicken-delight',
+          name: 'Poached Chicken Delight',
+          price: 169,
+          calories: 298,
+          protein: 54,
+          category: 'high-protein',
+          description: 'Tender poached chicken with light seasoning',
+          image: '/MenuImages/Poached Chicken Delight.jpg'
+        },
+        {
+          id: 'blanched-paneer-bites',
+          name: 'Blanched Paneer Bites',
+          price: 169,
+          calories: 478,
+          protein: 39,
+          category: 'high-protein',
+          description: 'Soft blanched paneer cubes',
+          isVegetarian: true,
+          image: '/MenuImages/Blanched Paneer Bites.jpg'
+        }
+      ]
+    },
+    {
+      id: 'anti-aging',
+      name: 'Anti Aging Diet [Inspired by Bryan Johnson]',
+      description: 'Science-backed nutrition for longevity and vitality',
+      items: [
+        {
+          id: 'greens-proteins-poached-chicken-salad',
+          name: 'Greens & Proteins Poached Chicken Salad',
+          price: 309,
+          calories: 610,
+          protein: 84,
+          category: 'anti-aging',
+          description: 'Fresh greens with poached chicken for maximum nutrition',
+          image: '/MenuImages/Greens and Proteins Poached Chicken Salad .jpg'
+        },
+        {
+          id: 'greens-proteins-blanched-paneer-salad',
+          name: 'Greens & Proteins Blanched Paneer Salad',
+          price: 309,
+          calories: 690,
+          protein: 49,
+          category: 'anti-aging',
+          description: 'Nutrient-rich greens with blanched paneer',
+          isVegetarian: true,
+          image: '/MenuImages/Greens and Proteins Blanched Paneer Salad .jpg'
+        },
+        {
+          id: 'chicken-powered-stir-fry',
+          name: 'Chicken Powered Stir Fry',
+          price: 349,
+          calories: 690,
+          protein: 79,
+          category: 'anti-aging',
+          description: 'Stir-fried chicken with antioxidant-rich vegetables',
+          image: '/MenuImages/Chicken Powered Stir Fry .jpg'
+        }
+      ]
+    },
+    {
+      id: 'bowls',
+      name: 'Bowls',
+      description: 'Complete meals in a bowl - nutrition meets convenience',
+      items: [
+        {
+          id: 'protein-packed-chicken-meal',
+          name: 'Protein Packed Chicken Meal',
+          price: 289,
+          calories: 530,
+          protein: 72,
+          category: 'bowls',
+          description: 'Complete meal with chicken, rice, and vegetables',
+          image: '/MenuImages/Protein Packed Chicken Meal .jpg'
+        },
+        {
+          id: 'veggie-paneer-meal',
+          name: 'Veggie Paneer Meal',
+          price: 289,
+          calories: 790,
+          protein: 42,
+          category: 'bowls',
+          description: 'Vegetarian bowl with paneer and fresh vegetables',
+          isVegetarian: true,
+          image: '/MenuImages/Veggie Paneer Meal.jpg'
+        },
+        {
+          id: 'poached-chicken-meal',
+          name: 'Poached Chicken Meal',
+          price: 269,
+          calories: 500,
+          protein: 67,
+          category: 'bowls',
+          description: 'Light and healthy poached chicken bowl',
+          image: '/MenuImages/Poached Chicken Meal .jpg'
+        },
+        {
+          id: 'blanched-paneer-veggie-meal',
+          name: 'Blanched Paneer Veggie Meal',
+          price: 269,
+          calories: 750,
+          protein: 44,
+          category: 'bowls',
+          description: 'Vegetarian bowl with blanched paneer',
+          isVegetarian: true,
+          image: '/MenuImages/Blanched Paneer Veggie Meal.jpg'
+        },
+        {
+          id: 'protein-packed-chicken-salad',
+          name: 'Protein Packed Chicken Salad',
+          price: 249,
+          calories: 470,
+          protein: 69,
+          category: 'bowls',
+          description: 'Fresh salad bowl with grilled chicken',
+          image: '/MenuImages/Protein Packed Chicken Salad.jpg'
+        },
+        {
+          id: 'veggie-paneer-salad',
+          name: 'Veggie Paneer Salad',
+          price: 249,
+          calories: 760,
+          protein: 46,
+          category: 'bowls',
+          description: 'Fresh salad bowl with paneer',
+          isVegetarian: true,
+          image: '/MenuImages/Veggie Paneer Salad.jpg'
+        },
+        {
+          id: 'poached-chicken-salad',
+          name: 'Poached Chicken Salad',
+          price: 229,
+          calories: 440,
+          protein: 63,
+          category: 'bowls',
+          description: 'Light salad with poached chicken',
+          image: '/MenuImages/Poached Chicken Salad.jpg'
+        },
+        {
+          id: 'blanched-paneer-veggie-salad',
+          name: 'Blanched Paneer Veggie Salad',
+          price: 229,
+          calories: 730,
+          protein: 42,
+          category: 'bowls',
+          description: 'Fresh salad with blanched paneer',
+          isVegetarian: true,
+          image: '/MenuImages/Blanched Paneer Veggie Salad.jpg'
+        }
+      ]
+    }
+  ]
+}; 
