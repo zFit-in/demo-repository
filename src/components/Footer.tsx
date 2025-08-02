@@ -20,15 +20,16 @@ const Footer = () => {
             <h3>Contact Info</h3>
             <div className="contact-item">
               <Phone className="contact-icon" />
-              <span>+91 98765 43210</span>
+              <span>++91 96934 38548</span>
             </div>
             <div className="contact-item">
               <Mail className="contact-icon" />
-              <span>hello@zfit.in</span>
+              <span>sahil.astralamind@gmail.com</span>
             </div>
             <div className="contact-item">
               <MapPin className="contact-icon" />
-              <span>Your City, State - PIN</span>
+              <span>ZFIT, Munnekollal, Kundalahalli, Silver Springs Layout, Sai Baba Temple Road, Near HDFC Bank ATM, Marathahalli, Bangalore
+              </span>
             </div>
           </div>
 
