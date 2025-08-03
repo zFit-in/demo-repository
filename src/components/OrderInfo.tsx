@@ -1,4 +1,4 @@
-import { Clock, Smartphone, AlertCircle, ExternalLink } from 'lucide-react';
+import { Clock, Smartphone, AlertCircle, ExternalLink, Youtube, Instagram } from 'lucide-react';
 import './OrderInfo.css';
 
 const OrderInfo = () => {
@@ -91,6 +91,37 @@ const OrderInfo = () => {
                   <span className="platform-desc">Order on Swiggy</span>
                 </div>
                 <ExternalLink className="external-link" />
+              </a>
+            </div>
+          </div>
+
+          <div className="social-media-section">
+            <h3 className="social-title">Follow Us on Social Media</h3>
+            <div className="social-media-buttons">
+              <a 
+                href="https://www.youtube.com/@zfit-in" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="social-media-btn youtube-btn"
+              >
+                <Youtube className="social-media-icon" />
+                <div className="social-media-info">
+                  <span className="social-media-name">YouTube</span>
+                  <span className="social-media-handle">@zfit-in</span>
+                </div>
+              </a>
+
+              <a 
+                href="https://www.instagram.com/zfit_in/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="social-media-btn instagram-btn"
+              >
+                <Instagram className="social-media-icon" />
+                <div className="social-media-info">
+                  <span className="social-media-name">Instagram</span>
+                  <span className="social-media-handle">@zfit_in</span>
+                </div>
               </a>
             </div>
           </div>

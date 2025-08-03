@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Shield } from 'lucide-react';
+import { Phone, Mail, MapPin, Shield, Youtube, Instagram } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <span className="footer-logo-text">ZFIT</span>
+              <img src="/favicon.svg" alt="ZFIT Logo" className="footer-logo-image" />
             </div>
             <p className="footer-tagline">
               The McDonald's of healthy food. Making healthy eating exciting and delicious.
@@ -29,6 +29,30 @@ const Footer = () => {
               <MapPin className="contact-icon" />
               <span>ZFIT, Munnekollal, Kundalahalli, Silver Springs Layout, Sai Baba Temple Road, Near HDFC Bank ATM, Marathahalli, Bangalore
               </span>
+            </div>
+          </div>
+
+          <div className="footer-section">
+            <h3>Social Media</h3>
+            <div className="social-links">
+              <a 
+                href="https://www.youtube.com/@zfit-in" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <Youtube className="social-icon" data-icon="youtube" />
+                <span>@zfit-in</span>
+              </a>
+              <a 
+                href="https://www.instagram.com/zfit_in/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <Instagram className="social-icon" data-icon="instagram" />
+                <span>@zfit_in</span>
+              </a>
             </div>
           </div>
 

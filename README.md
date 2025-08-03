@@ -81,7 +81,7 @@ npm run build
 ```
 zfit-in/
 ├── public/
-│   ├── zfit.png          # Main logo image
+│   ├── zfit.svg          # Main logo image
 │   └── vite.svg          # Vite favicon
 ├── src/
 │   ├── components/       # React components

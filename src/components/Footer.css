@@ -55,6 +55,45 @@
   min-width: 20px;
 }
 
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+}
+
+.social-link:hover {
+  color: var(--zfit-green-light);
+}
+
+.social-icon {
+  color: var(--zfit-green-light);
+  min-width: 20px;
+  transition: transform 0.2s ease;
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
+/* Brand colors for social media icons */
+.social-link .social-icon[data-icon="youtube"] {
+  color: #ff0000;
+}
+
+.social-link .social-icon[data-icon="instagram"] {
+  color: #e4407f;
+}
+
 .footer-links {
   list-style: none;
   padding: 0;

@@ -204,18 +204,105 @@
 
 .external-link {
   color: var(--text-secondary);
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
+  min-width: 20px;
+  transition: color 0.2s ease;
 }
 
 /* Zomato and Swiggy specific styling */
 .zomato-btn:hover {
-  border: 2px solid #e23744;
+  background: #e23744;
 }
 
 .swiggy-btn:hover {
-  border: 2px solid #fc8019;
+  background: #fc8019;
+}
+
+/* Social Media Section */
+.social-media-section {
+  background: var(--bg-gray);
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.social-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-media-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: var(--bg-white);
+  border-radius: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 200px;
+}
+
+.social-media-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.social-media-icon {
+  min-width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+.social-media-btn:hover .social-media-icon {
+  transform: scale(1.1);
+}
+
+.social-media-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.social-media-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+}
+
+.social-media-handle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* Brand colors for social media icons */
+.youtube-btn .social-media-icon {
+  color: #ff0000;
+}
+
+.instagram-btn .social-media-icon {
+  color: #e4407f;
+}
+
+.youtube-btn:hover {
+  background: #fff5f5;
+  border: 1px solid #ff0000;
+}
+
+.instagram-btn:hover {
+  background: #fdf2f8;
+  border: 1px solid #e4405f;
 }
 
 @keyframes pulse {
@@ -283,5 +370,30 @@
     width: 100%;
     max-width: 300px;
     justify-content: center;
+  }
+
+  .social-media-section {
+    padding: 1.5rem;
+  }
+
+  .social-title {
+    font-size: 1.25rem;
+  }
+
+  .social-media-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media-btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+  }
+
+  .social-media-icon {
+    min-width: 28px;
+    height: 28px;
   }
 } 

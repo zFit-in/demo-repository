@@ -14,7 +14,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <span className="logo-text">ZFIT</span>
+            <img src="/favicon.svg" alt="ZFIT Logo" className="logo-image" />
           </div>
           
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
