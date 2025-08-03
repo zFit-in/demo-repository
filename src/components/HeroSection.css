@@ -99,7 +99,7 @@
 }
 
 .hero-logo {
-  max-width: 150%;
+  max-width: 80%;
   height: auto;
   border-radius: 1rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -107,6 +107,12 @@
 
 .hero-logo:hover {
   transform: scale(1.02);
+}
+
+@media (min-width: 1024px) {
+  .hero-logo {
+    max-width: 150%;
+  }
 }
 
 @media (max-width: 768px) {
