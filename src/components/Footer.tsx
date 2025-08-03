@@ -8,7 +8,6 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <img src="/zfit.png" alt="ZFIT Logo" className="footer-logo-image" />
               <span className="footer-logo-text">ZFIT</span>
             </div>
             <p className="footer-tagline">

@@ -27,42 +27,6 @@ const OrderInfo = () => {
             </div>
           </div>
 
-          <div className="delivery-platforms">
-            <h3 className="platforms-title">Order on Popular Platforms</h3>
-            <div className="platform-buttons">
-              <a
-                href="https://link.zomato.com/xqzv/rshare?id=1131557533056327c"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="platform-btn zomato-btn"
-              >
-                <div className="platform-icon zomato-icon">
-                  <span className="platform-text">Z</span>
-                </div>
-                <div className="platform-info">
-                  <span className="platform-name">Zomato</span>
-                  <span className="platform-desc">Order on Zomato</span>
-                </div>
-                <ExternalLink className="external-link" />
-              </a>
-
-              <a
-                href="https://www.swiggy.com/direct/brand/585107?source=swiggy-direct&subSource=generic"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="platform-btn swiggy-btn"
-              >
-                <div className="platform-icon swiggy-icon">
-                  <span className="platform-text">S</span>
-                </div>
-                <div className="platform-info">
-                  <span className="platform-name">Swiggy</span>
-                  <span className="platform-desc">Order on Swiggy</span>
-                </div>
-                <ExternalLink className="external-link" />
-              </a>
-            </div>
-          </div>
           <div className="order-details">
             <div className="order-detail-item">
               <Clock className="order-icon" />
@@ -89,9 +53,50 @@ const OrderInfo = () => {
               <div className="order-detail-content">
                 <h3>Live Tracking</h3>
                 <p className="order-note">Live tracking not available</p>
-                <p>Orders will be delivered within 20-25 minutes</p>
+                <p>Orders will be delivered within 30-45 minutes</p>
               </div>
             </div>
+          </div>
+
+          <div className="delivery-platforms">
+            <h3 className="platforms-title">Order on Popular Platforms</h3>
+            <div className="platform-buttons">
+              <a 
+                href="https://www.zomato.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="platform-btn zomato-btn"
+              >
+                <div className="platform-icon zomato-icon">
+                  <span className="platform-text">Z</span>
+                </div>
+                <div className="platform-info">
+                  <span className="platform-name">Zomato</span>
+                  <span className="platform-desc">Order on Zomato</span>
+                </div>
+                <ExternalLink className="external-link" />
+              </a>
+
+              <a 
+                href="https://www.swiggy.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="platform-btn swiggy-btn"
+              >
+                <div className="platform-icon swiggy-icon">
+                  <span className="platform-text">S</span>
+                </div>
+                <div className="platform-info">
+                  <span className="platform-name">Swiggy</span>
+                  <span className="platform-desc">Order on Swiggy</span>
+                </div>
+                <ExternalLink className="external-link" />
+              </a>
+            </div>
+          </div>
+
+          <div className="delivery-illustration">
+            <img src="/delivering.png" alt="Food delivery illustration" className="delivering-image" />
           </div>
         </div>
       </div>
