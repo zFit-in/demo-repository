@@ -73,20 +73,70 @@
   }
 
   &-cta {
-    background: var(--zfit-green);
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    display: inline-block;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &-platform-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &-platform-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
     font-weight: 600;
-    font-size: 1.125rem;
-    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
     &:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     }
+  }
+
+  &-platform-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+  }
+
+  &-platform-text {
+    font-weight: 700;
+  }
+
+  &-platform-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &-platform-name {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  &-platform-desc {
+    font-size: 0.875rem;
+    opacity: 0.8;
+  }
+
+  &-external-link {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.7;
   }
 
   &-image {
@@ -104,6 +154,35 @@
     &:hover {
       transform: scale(1.02);
     }
+  }
+}
+
+// Platform Button Styles
+.zomato-btn {
+  background: white;
+  color: #e23744;
+
+  .hero-platform-icon {
+    background: #e23744;
+  }
+
+  &:hover {
+    background: #f8f9fa;
+    color: #d32f3a;
+  }
+}
+
+.swiggy-btn {
+  background: white;
+  color: #fc8019;
+
+  .hero-platform-icon {
+    background: #fc8019;
+  }
+
+  &:hover {
+    background: #f8f9fa;
+    color: #e67300;
   }
 }
 
@@ -159,9 +238,28 @@
       font-size: 1rem;
     }
 
-    &-cta {
+    &-platform-buttons {
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    &-platform-btn {
+      padding: 0.75rem 1.25rem;
+      font-size: 0.875rem;
+    }
+
+    &-platform-icon {
+      width: 2rem;
+      height: 2rem;
       font-size: 1rem;
-      padding: 0.875rem 1.5rem;
+    }
+
+    &-platform-name {
+      font-size: 0.875rem;
+    }
+
+    &-platform-desc {
+      font-size: 0.75rem;
     }
   }
 

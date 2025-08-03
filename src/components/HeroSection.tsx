@@ -1,3 +1,4 @@
+import { ExternalLink } from 'lucide-react';
 import './HeroSection.scss';
 
 const HeroSection = () => {
@@ -27,9 +28,43 @@ const HeroSection = () => {
                 Repeat.
               </p>
               <div className="hero-cta">
-                <span className="hero-cta-text">
-                  Order Online at ZFIT • 5PM-11PM
-                </span>
+                <div className="hero-platform-buttons">
+                  <a
+                    href="https://link.zomato.com/xqzv/rshare?id=1131557533056327c"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hero-platform-btn zomato-btn"
+                  >
+                    <div className="hero-platform-icon zomato-icon">
+                      <span className="hero-platform-text">Z</span>
+                    </div>
+                    <div className="hero-platform-info">
+                      <span className="hero-platform-name">Zomato</span>
+                      <span className="hero-platform-desc">
+                        Order on Zomato
+                      </span>
+                    </div>
+                    <ExternalLink className="hero-external-link" />
+                  </a>
+
+                  <a
+                    href="https://www.swiggy.com/direct/brand/585107?source=swiggy-direct&subSource=generic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hero-platform-btn swiggy-btn"
+                  >
+                    <div className="hero-platform-icon swiggy-icon">
+                      <span className="hero-platform-text">S</span>
+                    </div>
+                    <div className="hero-platform-info">
+                      <span className="hero-platform-name">Swiggy</span>
+                      <span className="hero-platform-desc">
+                        Order on Swiggy
+                      </span>
+                    </div>
+                    <ExternalLink className="hero-external-link" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

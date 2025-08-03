@@ -125,107 +125,6 @@
   margin-top: 1rem;
 }
 
-// Delivery Platforms
-.delivery-platforms {
-  background: var(--bg-gray);
-  padding: 2rem;
-  border-radius: 1rem;
-  position: relative;
-  z-index: 2;
-}
-
-.platforms-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  color: var(--text-primary);
-  text-align: center;
-}
-
-.platform-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.platform-btn {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.5rem 2rem;
-  background: var(--bg-white);
-  border-radius: 1rem;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  min-width: 200px;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-  }
-}
-
-.platform-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: white;
-  flex-shrink: 0;
-}
-
-.platform-text {
-  font-weight: bold;
-  font-size: 1.25rem;
-}
-
-.zomato-icon {
-  background: #e23744;
-}
-
-.swiggy-icon {
-  background: #fc8019;
-}
-
-.platform-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  flex: 1;
-}
-
-.platform-name {
-  font-weight: 600;
-  font-size: 1.125rem;
-  color: var(--text-primary);
-}
-
-.platform-desc {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-}
-
-.external-link {
-  color: var(--text-secondary);
-  min-width: 20px;
-  transition: color 0.2s ease;
-}
-
-// Platform-specific hover effects
-.zomato-btn:hover {
-  background: #e23744;
-}
-
-.swiggy-btn:hover {
-  background: #fc8019;
-}
-
 // Social Media Section
 .social-media-section {
   background: var(--bg-gray);
@@ -362,25 +261,6 @@
 
   .status-text {
     font-size: 1rem;
-  }
-
-  .delivery-platforms {
-    padding: 1.5rem;
-  }
-
-  .platforms-title {
-    font-size: 1.25rem;
-  }
-
-  .platform-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .platform-btn {
-    width: 100%;
-    max-width: 300px;
-    justify-content: center;
   }
 
   .social-media-section {
