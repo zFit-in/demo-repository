@@ -16,8 +16,10 @@ ZFIT is positioned as the future "McDonald's of healthy food," making healthy ea
 - **SEO Optimized**: Proper meta tags, semantic HTML, and structured data
 - **Menu Search & Filter**: Find your perfect meal quickly
 - **Real-time Status**: Shows current ordering availability (5PM-11PM)
+- **Social Media Integration**: YouTube and Instagram links with brand colors
 - **Nutrition Focus**: Detailed calorie and protein information
 - **Accessibility**: WCAG compliant with proper alt tags and contrast
+- **Code Quality**: ESLint and Prettier for consistent code formatting
 
 ## 🚀 Tech Stack
 
@@ -26,6 +28,7 @@ ZFIT is positioned as the future "McDonald's of healthy food," making healthy ea
 - **React Router** for navigation
 - **Lucide React** for beautiful icons
 - **CSS Grid & Flexbox** for responsive layouts
+- **ESLint & Prettier** for code quality
 - **GitHub Pages** for deployment
 
 ## 📦 Installation
@@ -48,6 +51,35 @@ ZFIT is positioned as the future "McDonald's of healthy food," making healthy ea
 
 4. **Open your browser**
    Navigate to `http://localhost:5173`
+
+## 🔧 Development Commands
+
+### Code Quality & Linting
+```bash
+# Check for linting issues
+npm run lint
+
+# Fix linting issues automatically
+npm run lint:fix
+
+# Format code with Prettier
+npm run format
+
+# Check TypeScript types
+npm run type-check
+```
+
+### Build & Deploy
+```bash
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Deploy to GitHub Pages
+npm run deploy
+```
 
 ## 🏗️ Build & Deploy
 
@@ -81,23 +113,31 @@ npm run build
 ```
 zfit-in/
 ├── public/
-│   ├── zfit.svg          # Main logo image
-│   └── vite.svg          # Vite favicon
+│   ├── zfit.svg          # Main logo (favicon)
+│   ├── eating.png        # Hero section illustration
+│   ├── delivering.png    # Order info illustration
+│   └── MenuImages/       # Menu item images
 ├── src/
 │   ├── components/       # React components
-│   │   ├── Header.tsx
-│   │   ├── HeroSection.tsx
-│   │   ├── MenuSection.tsx
-│   │   ├── MenuItemCard.tsx
-│   │   ├── OrderInfo.tsx
-│   │   └── Footer.tsx
+│   │   ├── Header.tsx    # Navigation header
+│   │   ├── HeroSection.tsx # Main hero banner
+│   │   ├── MenuSection.tsx # Menu display with search
+│   │   ├── MenuItemCard.tsx # Individual menu item
+│   │   ├── OrderInfo.tsx # Ordering information
+│   │   ├── Footer.tsx    # Footer with contact & social
+│   │   └── *.css         # Component-specific styles
 │   ├── data/            # Static data
-│   │   └── menu.ts
+│   │   └── menu.ts      # Menu items data
 │   ├── types/           # TypeScript interfaces
-│   │   └── menu.ts
+│   │   └── menu.ts      # Menu type definitions
 │   ├── App.tsx          # Main app component
 │   ├── main.tsx         # Entry point
-│   └── index.css        # Global styles
+│   ├── index.css        # Global styles & variables
+│   └── App.css          # App-specific styles
+├── .vscode/             # VS Code settings
+├── eslint.config.js     # ESLint configuration
+├── .prettierrc          # Prettier configuration
+├── .prettierignore      # Prettier ignore rules
 ├── package.json
 ├── vite.config.ts
 ├── tsconfig.json
@@ -141,6 +181,10 @@ zfit-in/
 - **Headings**: Bold weights (600-800)
 - **Body**: Regular weight (400-500)
 
+### Social Media Brand Colors
+- **YouTube**: `#ff0000` (Red)
+- **Instagram**: `#e4407f` (Pink)
+
 ## 📱 Responsive Breakpoints
 
 - **Mobile**: < 768px
@@ -161,7 +205,8 @@ Edit `src/data/menu.ts` to add new items:
   protein: 55,
   category: 'high-protein',
   description: 'Description here',
-  isVegetarian: false
+  isVegetarian: false,
+  image: '/MenuImages/NewItem.jpg'
 }
 ```
 
@@ -176,6 +221,20 @@ Modify CSS variables in `src/index.css`:
 }
 ```
 
+### Code Quality Settings
+- **ESLint**: Configured for TypeScript and React
+- **Prettier**: Consistent code formatting
+- **VS Code**: Auto-format on save enabled
+
+## 🌐 SEO Features
+
+- **Meta Tags**: Title, description, keywords
+- **Open Graph**: Social media sharing
+- **Twitter Cards**: Twitter-specific meta tags
+- **Structured Data**: Semantic HTML markup
+- **Google Analytics**: AW-17427863421 tracking
+- **Canonical URLs**: Proper URL structure
+
 ## 📄 License
 
 This project is licensed under the MIT License.
@@ -185,13 +244,19 @@ This project is licensed under the MIT License.
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Submit a pull request
+4. Run linting: `npm run lint`
+5. Format code: `npm run format`
+6. Submit a pull request
 
 ## 📞 Contact
 
 - **Phone**: +91 96934 38548
 - **Email**: contact@zfit.in
+- **Address**: ZFIT, Munnekollal, Kundalahalli, Silver Springs Layout, Sai Baba Temple Road, Near HDFC Bank ATM, Marathahalli, Bangalore
 - **FSSAI License**: 21224008002624
+- **Social Media**: 
+  - YouTube: [@zfit-in](https://www.youtube.com/@zfit-in)
+  - Instagram: [@zfit_in](https://www.instagram.com/zfit_in/)
 
 ---
 

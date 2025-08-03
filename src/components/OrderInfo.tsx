@@ -1,4 +1,11 @@
-import { Clock, Smartphone, AlertCircle, ExternalLink, Youtube, Instagram } from 'lucide-react';
+import {
+  Clock,
+  Smartphone,
+  AlertCircle,
+  ExternalLink,
+  Youtube,
+  Instagram,
+} from 'lucide-react';
 import './OrderInfo.css';
 
 const OrderInfo = () => {
@@ -16,12 +23,16 @@ const OrderInfo = () => {
               {isOpen ? (
                 <>
                   <div className="status-dot open"></div>
-                  <span className="status-text">Currently Open for Online Ordering</span>
+                  <span className="status-text">
+                    Currently Open for Online Ordering
+                  </span>
                 </>
               ) : (
                 <>
                   <div className="status-dot closed"></div>
-                  <span className="status-text">Currently Closed for Online Ordering</span>
+                  <span className="status-text">
+                    Currently Closed for Online Ordering
+                  </span>
                 </>
               )}
             </div>
@@ -61,9 +72,9 @@ const OrderInfo = () => {
           <div className="delivery-platforms">
             <h3 className="platforms-title">Order on Popular Platforms</h3>
             <div className="platform-buttons">
-              <a 
-                href="https://www.zomato.com" 
-                target="_blank" 
+              <a
+                href="https://www.zomato.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="platform-btn zomato-btn"
               >
@@ -77,9 +88,9 @@ const OrderInfo = () => {
                 <ExternalLink className="external-link" />
               </a>
 
-              <a 
-                href="https://www.swiggy.com" 
-                target="_blank" 
+              <a
+                href="https://www.swiggy.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="platform-btn swiggy-btn"
               >
@@ -98,9 +109,9 @@ const OrderInfo = () => {
           <div className="social-media-section">
             <h3 className="social-title">Follow Us on Social Media</h3>
             <div className="social-media-buttons">
-              <a 
-                href="https://www.youtube.com/@zfit-in" 
-                target="_blank" 
+              <a
+                href="https://www.youtube.com/@zfit-in"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="social-media-btn youtube-btn"
               >
@@ -111,9 +122,9 @@ const OrderInfo = () => {
                 </div>
               </a>
 
-              <a 
-                href="https://www.instagram.com/zfit_in/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/zfit_in/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="social-media-btn instagram-btn"
               >
@@ -127,7 +138,11 @@ const OrderInfo = () => {
           </div>
 
           <div className="delivery-illustration">
-            <img src="/delivering.png" alt="Food delivery illustration" className="delivering-image" />
+            <img
+              src="/delivering.png"
+              alt="Food delivery illustration"
+              className="delivering-image"
+            />
           </div>
         </div>
       </div>
@@ -135,4 +150,4 @@ const OrderInfo = () => {
   );
 };
 
-export default OrderInfo; 
+export default OrderInfo;

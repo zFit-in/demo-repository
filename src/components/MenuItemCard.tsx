@@ -45,16 +45,16 @@ const MenuItemCard = ({ item }: MenuItemCardProps) => {
               <span>Loading...</span>
             </div>
           )}
-          
+
           {imageError && (
             <div className="image-error">
               <ImageIcon className="error-icon" />
               <span>Image not available</span>
             </div>
           )}
-          
-          <img 
-            src={item.image} 
+
+          <img
+            src={item.image}
             alt={item.name}
             className={`menu-image ${imageLoaded ? 'loaded' : ''}`}
             onLoad={() => setImageLoaded(true)}
@@ -65,7 +65,7 @@ const MenuItemCard = ({ item }: MenuItemCardProps) => {
           />
         </div>
       )}
-      
+
       <div className="menu-item-content">
         <div className="menu-item-header">
           <div className="menu-item-title">
@@ -91,7 +91,9 @@ const MenuItemCard = ({ item }: MenuItemCardProps) => {
           </div>
           <div className="nutrition-item">
             <span className="nutrition-label">Protein:</span>
-            <span className="nutrition-value protein-highlight">{item.protein}g</span>
+            <span className="nutrition-value protein-highlight">
+              {item.protein}g
+            </span>
           </div>
         </div>
 
@@ -100,13 +102,11 @@ const MenuItemCard = ({ item }: MenuItemCardProps) => {
             <span className="price-currency">₹</span>
             <span className="price-amount">{item.price}</span>
           </div>
-          <button className="btn btn-primary order-btn">
-            Order Now
-          </button>
+          <button className="btn btn-primary order-btn">Order Now</button>
         </div>
       </div>
     </div>
   );
 };
 
-export default MenuItemCard; 
+export default MenuItemCard;

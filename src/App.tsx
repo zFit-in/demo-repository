@@ -11,17 +11,20 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={
-          <>
-            <HeroSection />
-            <OrderInfo />
-            <MenuSection />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <OrderInfo />
+              <MenuSection />
+            </>
+          }
+        />
       </Routes>
       <Footer />
     </div>
   );
 }
 
-export default App; 
+export default App;

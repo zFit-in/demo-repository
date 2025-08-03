@@ -16,13 +16,29 @@ const Header = () => {
           <div className="logo">
             <img src="/favicon.svg" alt="ZFIT Logo" className="logo-image" />
           </div>
-          
+
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
             <ul className="nav-list">
-              <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
-              <li><a href="#menu" onClick={() => setIsMenuOpen(false)}>Menu</a></li>
-              <li><a href="#order" onClick={() => setIsMenuOpen(false)}>Order</a></li>
-              <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
+              <li>
+                <a href="#home" onClick={() => setIsMenuOpen(false)}>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#menu" onClick={() => setIsMenuOpen(false)}>
+                  Menu
+                </a>
+              </li>
+              <li>
+                <a href="#order" onClick={() => setIsMenuOpen(false)}>
+                  Order
+                </a>
+              </li>
+              <li>
+                <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+                  Contact
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -35,4 +51,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;

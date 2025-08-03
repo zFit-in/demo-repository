@@ -15,7 +15,7 @@ export const menuData: MenuData = {
           protein: 59,
           category: 'high-protein',
           description: 'Perfectly grilled chicken breast with herbs and spices',
-          image: '/MenuImages/Grilled Chicken.jpg'
+          image: '/MenuImages/Grilled Chicken.jpg',
         },
         {
           id: 'grilled-paneer',
@@ -26,7 +26,7 @@ export const menuData: MenuData = {
           category: 'high-protein',
           description: 'Fresh paneer grilled to perfection',
           isVegetarian: true,
-          image: '/MenuImages/Grilled Paneer .jpg'
+          image: '/MenuImages/Grilled Paneer .jpg',
         },
         {
           id: 'poached-chicken-delight',
@@ -36,7 +36,7 @@ export const menuData: MenuData = {
           protein: 54,
           category: 'high-protein',
           description: 'Tender poached chicken with light seasoning',
-          image: '/MenuImages/Poached Chicken Delight.jpg'
+          image: '/MenuImages/Poached Chicken Delight.jpg',
         },
         {
           id: 'blanched-paneer-bites',
@@ -47,9 +47,9 @@ export const menuData: MenuData = {
           category: 'high-protein',
           description: 'Soft blanched paneer cubes',
           isVegetarian: true,
-          image: '/MenuImages/Blanched Paneer Bites.jpg'
-        }
-      ]
+          image: '/MenuImages/Blanched Paneer Bites.jpg',
+        },
+      ],
     },
     {
       id: 'anti-aging',
@@ -63,8 +63,9 @@ export const menuData: MenuData = {
           calories: 610,
           protein: 84,
           category: 'anti-aging',
-          description: 'Fresh greens with poached chicken for maximum nutrition',
-          image: '/MenuImages/Greens and Proteins Poached Chicken Salad .jpg'
+          description:
+            'Fresh greens with poached chicken for maximum nutrition',
+          image: '/MenuImages/Greens and Proteins Poached Chicken Salad .jpg',
         },
         {
           id: 'greens-proteins-blanched-paneer-salad',
@@ -75,7 +76,7 @@ export const menuData: MenuData = {
           category: 'anti-aging',
           description: 'Nutrient-rich greens with blanched paneer',
           isVegetarian: true,
-          image: '/MenuImages/Greens and Proteins Blanched Paneer Salad .jpg'
+          image: '/MenuImages/Greens and Proteins Blanched Paneer Salad .jpg',
         },
         {
           id: 'chicken-powered-stir-fry',
@@ -85,9 +86,9 @@ export const menuData: MenuData = {
           protein: 79,
           category: 'anti-aging',
           description: 'Stir-fried chicken with antioxidant-rich vegetables',
-          image: '/MenuImages/Chicken Powered Stir Fry .jpg'
-        }
-      ]
+          image: '/MenuImages/Chicken Powered Stir Fry .jpg',
+        },
+      ],
     },
     {
       id: 'bowls',
@@ -102,7 +103,7 @@ export const menuData: MenuData = {
           protein: 72,
           category: 'bowls',
           description: 'Complete meal with chicken, rice, and vegetables',
-          image: '/MenuImages/Protein Packed Chicken Meal .jpg'
+          image: '/MenuImages/Protein Packed Chicken Meal .jpg',
         },
         {
           id: 'veggie-paneer-meal',
@@ -113,7 +114,7 @@ export const menuData: MenuData = {
           category: 'bowls',
           description: 'Vegetarian bowl with paneer and fresh vegetables',
           isVegetarian: true,
-          image: '/MenuImages/Veggie Paneer Meal.jpg'
+          image: '/MenuImages/Veggie Paneer Meal.jpg',
         },
         {
           id: 'poached-chicken-meal',
@@ -123,7 +124,7 @@ export const menuData: MenuData = {
           protein: 67,
           category: 'bowls',
           description: 'Light and healthy poached chicken bowl',
-          image: '/MenuImages/Poached Chicken Meal .jpg'
+          image: '/MenuImages/Poached Chicken Meal .jpg',
         },
         {
           id: 'blanched-paneer-veggie-meal',
@@ -134,7 +135,7 @@ export const menuData: MenuData = {
           category: 'bowls',
           description: 'Vegetarian bowl with blanched paneer',
           isVegetarian: true,
-          image: '/MenuImages/Blanched Paneer Veggie Meal.jpg'
+          image: '/MenuImages/Blanched Paneer Veggie Meal.jpg',
         },
         {
           id: 'protein-packed-chicken-salad',
@@ -144,7 +145,7 @@ export const menuData: MenuData = {
           protein: 69,
           category: 'bowls',
           description: 'Fresh salad bowl with grilled chicken',
-          image: '/MenuImages/Protein Packed Chicken Salad.jpg'
+          image: '/MenuImages/Protein Packed Chicken Salad.jpg',
         },
         {
           id: 'veggie-paneer-salad',
@@ -155,7 +156,7 @@ export const menuData: MenuData = {
           category: 'bowls',
           description: 'Fresh salad bowl with paneer',
           isVegetarian: true,
-          image: '/MenuImages/Veggie Paneer Salad.jpg'
+          image: '/MenuImages/Veggie Paneer Salad.jpg',
         },
         {
           id: 'poached-chicken-salad',
@@ -165,7 +166,7 @@ export const menuData: MenuData = {
           protein: 63,
           category: 'bowls',
           description: 'Light salad with poached chicken',
-          image: '/MenuImages/Poached Chicken Salad.jpg'
+          image: '/MenuImages/Poached Chicken Salad.jpg',
         },
         {
           id: 'blanched-paneer-veggie-salad',
@@ -176,9 +177,9 @@ export const menuData: MenuData = {
           category: 'bowls',
           description: 'Fresh salad with blanched paneer',
           isVegetarian: true,
-          image: '/MenuImages/Blanched Paneer Veggie Salad.jpg'
-        }
-      ]
-    }
-  ]
-}; 
+          image: '/MenuImages/Blanched Paneer Veggie Salad.jpg',
+        },
+      ],
+    },
+  ],
+};

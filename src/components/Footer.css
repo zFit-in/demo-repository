@@ -86,11 +86,11 @@
 }
 
 /* Brand colors for social media icons */
-.social-link .social-icon[data-icon="youtube"] {
+.social-link .social-icon[data-icon='youtube'] {
   color: #ff0000;
 }
 
-.social-link .social-icon[data-icon="instagram"] {
+.social-link .social-icon[data-icon='instagram'] {
   color: #e4407f;
 }
 
@@ -172,11 +172,11 @@
     justify-content: center;
   }
 
-  .social-link{
+  .social-link {
     justify-content: center;
   }
 
   .license-info {
     justify-content: center;
   }
-} 
+}

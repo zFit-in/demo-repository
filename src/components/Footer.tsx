@@ -8,10 +8,15 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <img src="/favicon.svg" alt="ZFIT Logo" className="footer-logo-image" />
+              <img
+                src="/favicon.svg"
+                alt="ZFIT Logo"
+                className="footer-logo-image"
+              />
             </div>
             <p className="footer-tagline">
-              The McDonald's of healthy food. Making healthy eating exciting and delicious.
+              The McDonald&apos;s of healthy food. Making healthy eating
+              exciting and delicious.
             </p>
           </div>
 
@@ -27,7 +32,9 @@ const Footer = () => {
             </div>
             <div className="contact-item">
               <MapPin className="contact-icon" />
-              <span>ZFIT, Munnekollal, Kundalahalli, Silver Springs Layout, Sai Baba Temple Road, Near HDFC Bank ATM, Marathahalli, Bangalore
+              <span>
+                ZFIT, Munnekollal, Kundalahalli, Silver Springs Layout, Sai Baba
+                Temple Road, Near HDFC Bank ATM, Marathahalli, Bangalore
               </span>
             </div>
           </div>
@@ -35,18 +42,18 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Social Media</h3>
             <div className="social-links">
-              <a 
-                href="https://www.youtube.com/@zfit-in" 
-                target="_blank" 
+              <a
+                href="https://www.youtube.com/@zfit-in"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
               >
                 <Youtube className="social-icon" data-icon="youtube" />
                 <span>@zfit-in</span>
               </a>
-              <a 
-                href="https://www.instagram.com/zfit_in/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/zfit_in/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
               >
@@ -59,10 +66,18 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Quick Links</h3>
             <ul className="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#order">Order</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#menu">Menu</a>
+              </li>
+              <li>
+                <a href="#order">Order</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
 
@@ -87,4 +102,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

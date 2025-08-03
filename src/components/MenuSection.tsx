@@ -12,15 +12,18 @@ const MenuSection = () => {
     { id: 'all', name: 'All Items', icon: <Search /> },
     { id: 'high-protein', name: 'High Protein', icon: <Zap /> },
     { id: 'anti-aging', name: 'Anti Aging', icon: <Leaf /> },
-    { id: 'bowls', name: 'Bowls', icon: <Utensils /> }
+    { id: 'bowls', name: 'Bowls', icon: <Utensils /> },
   ];
 
   const filteredItems = menuData.categories
     .flatMap(category => category.items)
     .filter(item => {
-      const matchesSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          (item.description && item.description.toLowerCase().includes(searchTerm.toLowerCase()));
-      const matchesCategory = selectedCategory === 'all' || item.category === selectedCategory;
+      const matchesSearch =
+        item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (item.description &&
+          item.description.toLowerCase().includes(searchTerm.toLowerCase()));
+      const matchesCategory =
+        selectedCategory === 'all' || item.category === selectedCategory;
       return matchesSearch && matchesCategory;
     });
 
@@ -30,7 +33,8 @@ const MenuSection = () => {
         <div className="menu-header">
           <h2 className="section-title">Our Menu</h2>
           <p className="section-subtitle">
-            Discover our delicious, nutritious meals designed for your health and fitness goals
+            Discover our delicious, nutritious meals designed for your health
+            and fitness goals
           </p>
         </div>
 
@@ -41,7 +45,7 @@ const MenuSection = () => {
               type="text"
               placeholder="Search menu items..."
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={e => setSearchTerm(e.target.value)}
               className="search-input"
             />
           </div>
@@ -68,7 +72,7 @@ const MenuSection = () => {
           ) : (
             <div className="no-results">
               <p>No items found matching your search criteria.</p>
-              <button 
+              <button
                 className="btn btn-secondary"
                 onClick={() => {
                   setSearchTerm('');
@@ -85,4 +89,4 @@ const MenuSection = () => {
   );
 };
 
-export default MenuSection; 
+export default MenuSection;
