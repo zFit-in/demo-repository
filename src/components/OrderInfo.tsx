@@ -6,7 +6,7 @@ import {
   Youtube,
   Instagram,
 } from 'lucide-react';
-import './OrderInfo.css';
+import './OrderInfo.scss';
 
 const OrderInfo = () => {
   // Check if current time is within ordering hours (5PM-11PM)

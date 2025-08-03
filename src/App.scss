@@ -1,0 +1,33 @@
+// App Component Styles
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  > *:not(footer) {
+    flex: 1;
+  }
+}
+
+// Smooth Scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+
+  &-track {
+    background: var(--bg-gray);
+  }
+
+  &-thumb {
+    background: var(--zfit-green);
+    border-radius: 4px;
+
+    &:hover {
+      background: var(--zfit-green-dark);
+    }
+  }
+} 

@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Search, Leaf, Zap, Utensils } from 'lucide-react';
-import { menuData } from '../data/menu';
+import { Search, Zap, Heart, Utensils } from 'lucide-react';
 import MenuItemCard from './MenuItemCard';
-import './MenuSection.css';
+import { menuData } from '../data/menu';
+import './MenuSection.scss';
 
 const MenuSection = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -11,7 +11,7 @@ const MenuSection = () => {
   const categories = [
     { id: 'all', name: 'All Items', icon: <Search /> },
     { id: 'high-protein', name: 'High Protein', icon: <Zap /> },
-    { id: 'anti-aging', name: 'Anti Aging', icon: <Leaf /> },
+    { id: 'anti-aging', name: 'Anti Aging', icon: <Heart /> },
     { id: 'bowls', name: 'Bowls', icon: <Utensils /> },
   ];
 

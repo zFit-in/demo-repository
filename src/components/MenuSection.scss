@@ -1,13 +1,16 @@
+// Menu Section Styles
 .menu-section {
   background: var(--bg-gray);
   padding: 4rem 0;
 }
 
+// Menu Header
 .menu-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
+// Menu Filters
 .menu-filters {
   display: flex;
   flex-direction: column;
@@ -15,6 +18,7 @@
   margin-bottom: 3rem;
 }
 
+// Search Container
 .search-container {
   position: relative;
   max-width: 500px;
@@ -37,13 +41,14 @@
   font-size: 1rem;
   background: var(--bg-white);
   transition: border-color 0.2s ease;
+
+  &:focus {
+    outline: none;
+    border-color: var(--zfit-green);
+  }
 }
 
-.search-input:focus {
-  outline: none;
-  border-color: var(--zfit-green);
-}
-
+// Category Filters
 .category-filters {
   display: flex;
   justify-content: center;
@@ -63,44 +68,47 @@
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
+
+  &:hover {
+    border-color: var(--zfit-green);
+    color: var(--zfit-green);
+  }
+
+  &.active {
+    background: var(--zfit-green);
+    border-color: var(--zfit-green);
+    color: white;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
 }
 
-.category-btn:hover {
-  border-color: var(--zfit-green);
-  color: var(--zfit-green);
-}
-
-.category-btn.active {
-  background: var(--zfit-green);
-  border-color: var(--zfit-green);
-  color: white;
-}
-
-.category-btn svg {
-  width: 18px;
-  height: 18px;
-}
-
+// Menu Grid
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
 }
 
+// No Results
 .no-results {
   grid-column: 1 / -1;
   text-align: center;
   padding: 3rem;
   background: var(--bg-white);
   border-radius: 1rem;
+
+  p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+  }
 }
 
-.no-results p {
-  color: var(--text-secondary);
-  margin-bottom: 1.5rem;
-  font-size: 1.125rem;
-}
-
+// Responsive Design
 @media (max-width: 768px) {
   .menu-section {
     padding: 2rem 0;
@@ -118,11 +126,11 @@
   .category-btn {
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
-  }
 
-  .category-btn svg {
-    width: 16px;
-    height: 16px;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   .menu-grid {
@@ -133,4 +141,4 @@
   .search-input {
     padding: 0.875rem 0.875rem 0.875rem 2.5rem;
   }
-}
+} 

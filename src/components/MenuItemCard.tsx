@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Leaf, Zap, Image as ImageIcon } from 'lucide-react';
+import { Zap, Heart, ImageIcon } from 'lucide-react';
 import { MenuItem } from '../types/menu';
-import './MenuItemCard.css';
+import './MenuItemCard.scss';
 
 interface MenuItemCardProps {
   item: MenuItem;
@@ -14,7 +14,7 @@ const MenuItemCard = ({ item }: MenuItemCardProps) => {
   const getCategoryIcon = () => {
     switch (item.category) {
       case 'anti-aging':
-        return <Leaf className="category-icon" />;
+        return <Heart className="category-icon" />;
       case 'high-protein':
         return <Zap className="category-icon" />;
       default:

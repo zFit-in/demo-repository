@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Shield, Youtube, Instagram } from 'lucide-react';
-import './Footer.css';
+import './Footer.scss';
 
 const Footer = () => {
   return (

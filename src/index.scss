@@ -1,0 +1,168 @@
+// CSS Variables
+:root {
+  --zfit-green: #22c55e;
+  --zfit-green-dark: #16a34a;
+  --zfit-green-light: #4ade80;
+  --zfit-green-bg: #f0fdf4;
+  --zfit-accent: #f59e0b;
+  --zfit-accent-dark: #d97706;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --bg-white: #ffffff;
+  --bg-gray: #f9fafb;
+  --border-color: #e5e7eb;
+}
+
+// Global Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+// ZFIT Logo Font - Bright Style
+.zfit-logo-font {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+// Layout Components
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// Button Components
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+
+  &-primary {
+    background-color: var(--zfit-green);
+    color: white;
+
+    &:hover {
+      background-color: var(--zfit-green-dark);
+      transform: translateY(-1px);
+    }
+  }
+
+  &-secondary {
+    background-color: transparent;
+    color: var(--zfit-green);
+    border: 2px solid var(--zfit-green);
+
+    &:hover {
+      background-color: var(--zfit-green);
+      color: white;
+    }
+  }
+}
+
+// Card Components
+.card {
+  background: var(--bg-white);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Badge Components
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &-success {
+    background-color: var(--zfit-green-bg);
+    color: var(--zfit-green-dark);
+  }
+
+  &-warning {
+    background-color: #fef3c7;
+    color: var(--zfit-accent-dark);
+  }
+
+  &-info {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+  }
+}
+
+// Section Components
+.section {
+  padding: 4rem 0;
+
+  &-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
+  &-subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 0;
+
+    &-title {
+      font-size: 2rem;
+    }
+
+    &-subtitle {
+      font-size: 1.125rem;
+    }
+  }
+
+  .container {
+    padding: 0 0.75rem;
+  }
+} 

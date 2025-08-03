@@ -20,6 +20,7 @@ ZFIT is positioned as the future "McDonald's of healthy food," making healthy ea
 - **Nutrition Focus**: Detailed calorie and protein information
 - **Accessibility**: WCAG compliant with proper alt tags and contrast
 - **Code Quality**: ESLint and Prettier for consistent code formatting
+- **SASS Styling**: Modern SCSS with nested selectors and variables
 
 ## 🚀 Tech Stack
 
@@ -27,6 +28,7 @@ ZFIT is positioned as the future "McDonald's of healthy food," making healthy ea
 - **Vite** for fast development and building
 - **React Router** for navigation
 - **Lucide React** for beautiful icons
+- **SASS/SCSS** for advanced styling
 - **CSS Grid & Flexbox** for responsive layouts
 - **ESLint & Prettier** for code quality
 - **GitHub Pages** for deployment
@@ -125,15 +127,20 @@ zfit-in/
 │   │   ├── MenuItemCard.tsx # Individual menu item
 │   │   ├── OrderInfo.tsx # Ordering information
 │   │   ├── Footer.tsx    # Footer with contact & social
-│   │   └── *.css         # Component-specific styles
+│   │   ├── Header.scss   # Navigation styles
+│   │   ├── HeroSection.scss # Hero banner styles
+│   │   ├── MenuSection.scss # Menu display styles
+│   │   ├── MenuItemCard.scss # Menu item styles
+│   │   ├── OrderInfo.scss # Order info styles
+│   │   └── Footer.scss   # Footer styles
 │   ├── data/            # Static data
 │   │   └── menu.ts      # Menu items data
 │   ├── types/           # TypeScript interfaces
 │   │   └── menu.ts      # Menu type definitions
 │   ├── App.tsx          # Main app component
+│   ├── App.scss         # App-specific styles
 │   ├── main.tsx         # Entry point
-│   ├── index.css        # Global styles & variables
-│   └── App.css          # App-specific styles
+│   └── index.scss       # Global styles & variables
 ├── .vscode/             # VS Code settings
 ├── eslint.config.js     # ESLint configuration
 ├── .prettierrc          # Prettier configuration
@@ -211,15 +218,22 @@ Edit `src/data/menu.ts` to add new items:
 ```
 
 ### Updating Colors
-Modify CSS variables in `src/index.css`:
+Modify CSS variables in `src/index.scss`:
 
-```css
+```scss
 :root {
   --zfit-green: #your-color;
   --zfit-green-dark: #your-dark-color;
   /* ... */
 }
 ```
+
+### SASS Features
+The project uses SCSS with:
+- **Nested Selectors**: Clean, organized styles
+- **& Parent Selector**: Efficient pseudo-classes
+- **Variables**: CSS custom properties
+- **Comments**: Descriptive style documentation
 
 ### Code Quality Settings
 - **ESLint**: Configured for TypeScript and React

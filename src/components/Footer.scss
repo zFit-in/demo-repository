@@ -1,0 +1,192 @@
+// Footer Component Styles
+.footer {
+  background: var(--text-primary);
+  color: white;
+  padding: 3rem 0 1rem;
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &-section {
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--zfit-green-light);
+    }
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    &-image {
+      height: 32px;
+      width: auto;
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--zfit-green-light);
+    }
+  }
+
+  &-tagline {
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  &-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #d1d5db;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--zfit-green-light);
+      }
+    }
+  }
+
+  &-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 1rem;
+    text-align: center;
+    color: #9ca3af;
+
+    p {
+      margin: 0.25rem 0;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+// Contact Items
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: #d1d5db;
+}
+
+.contact-icon {
+  color: var(--zfit-green-light);
+  min-width: 20px;
+}
+
+// Social Links
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+
+  &:hover {
+    color: var(--zfit-green-light);
+
+    .social-icon {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.social-icon {
+  color: var(--zfit-green-light);
+  min-width: 20px;
+  transition: transform 0.2s ease;
+
+  &[data-icon='youtube'] {
+    color: #ff0000;
+  }
+
+  &[data-icon='instagram'] {
+    color: #e4407f;
+  }
+}
+
+// License Info
+.license-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(34, 197, 94, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.license-icon {
+  color: var(--zfit-green-light);
+  min-width: 24px;
+}
+
+.license-label {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin: 0 0 0.25rem 0;
+}
+
+.license-number {
+  font-weight: 600;
+  color: var(--zfit-green-light);
+  margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 1rem;
+
+    &-content {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    &-section {
+      text-align: center;
+    }
+
+    &-logo {
+      justify-content: center;
+    }
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .social-link {
+    justify-content: center;
+  }
+
+  .license-info {
+    justify-content: center;
+  }
+} 
