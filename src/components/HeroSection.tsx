@@ -7,16 +7,16 @@ const HeroSection = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              <span className="hero-highlight">Healthy is NOT boring.</span>
+              <span className="hero-highlight">Healthy that tastes SINFUL.</span>
             </h1>
             <p className="hero-subtitle">
-              You've been wrong all along—healthy can be seriously tasty.
+              Think healthy means boring? Think again.
             </p>
             <p className="hero-description">
-              Staying in PG? Struggling to reach your daily protein intake? Not anymore.
+              PG life or work grind ruining your gains? Eat clean. Lift heavy. Repeat.
             </p>
             <div className="hero-cta">
-              <span className="hero-cta-text">Order Online at ZFIT • 5PM–11PM</span>
+              <span className="hero-cta-text">Order Online at ZFIT • 5PM-11PM</span>
             </div>
           </div>
           <div className="hero-image">
