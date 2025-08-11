@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Shield, Youtube, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Footer.scss';
 
 const Footer = () => {
@@ -67,16 +68,16 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul className="footer-links">
               <li>
-                <a href="#home">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="#menu">Menu</a>
+                <Link to="/menu">Menu</Link>
               </li>
               <li>
-                <a href="#order">Order</a>
+                <Link to="/subscription">Subscription</Link>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

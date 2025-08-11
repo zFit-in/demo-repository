@@ -75,7 +75,7 @@
   &-cta {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   &-platform-buttons {
@@ -155,6 +155,43 @@
       transform: scale(1.02);
     }
   }
+}
+
+/* Subscription CTA */
+.hero-subscription-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.subscription-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--zfit-green), var(--zfit-green-dark));
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: fit-content;
+  max-width: 240px;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.subscription-cta-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(34, 197, 94, 0.35);
+}
+
+.subscription-cta-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }
 
 // Platform Button Styles
@@ -261,6 +298,11 @@
     &-platform-desc {
       font-size: 0.75rem;
     }
+  }
+
+  .subscription-cta-btn {
+    align-self: center;
+    max-width: none;
   }
 
   .eating-illustration {

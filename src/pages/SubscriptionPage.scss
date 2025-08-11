@@ -1,0 +1,150 @@
+.subscription-page {
+  background: var(--bg-gray);
+  padding: 2rem 0 4rem;
+}
+
+.subscription-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 340px));
+  
+  gap: 0rem;
+  justify-content: center; /* center cards in the available space */
+}
+
+.subscription-card {
+  padding: 1.5rem;
+  width: 90%;
+  margin: 0 auto; /* ensure each card centers in its grid column */
+  background: linear-gradient(180deg, rgba(34, 197, 94, 0.035), rgba(34, 197, 94, 0.01)), var(--bg-white);
+  border: 1px solid rgba(34, 197, 94, 0.15);
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.06), 0 6px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  position: relative;
+}
+
+.subscription-card::after {
+  content: '';
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  top: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--zfit-green), var(--zfit-green-dark));
+  border-radius: 9999px;
+  opacity: 0.85;
+}
+
+.subscription-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(34, 197, 94, 0.10), 0 12px 30px rgba(0, 0, 0, 0.06);
+  border-color: var(--zfit-green);
+  background: linear-gradient(180deg, rgba(34, 197, 94, 0.05), rgba(34, 197, 94, 0.02)), var(--bg-white);
+}
+
+.subscription-title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.subscription-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 56px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--zfit-green), var(--zfit-green-dark));
+  border-radius: 9999px;
+}
+
+.field {
+  display: grid;
+  gap: 0.25rem;
+  margin-bottom: 0.9rem;
+}
+
+.field label {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.field select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: var(--bg-white);
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field select:focus {
+  border-color: var(--zfit-green);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15);
+}
+
+.field .protein-steps {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.field .protein-steps .btn {
+  min-width: 72px;
+}
+
+.field .value {
+  font-weight: 700;
+}
+
+.field .note {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.summary {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 640px; /* clamp summary width */
+  margin-left: auto;
+  margin-right: auto; /* center summary card */
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.summary-row.total {
+  border-top: 2px solid var(--border-color);
+  padding-top: 0.75rem;
+  font-size: 1.125rem;
+}
+
+.options {
+  margin: 0.5rem 0 1rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subscribe-btn {
+  width: 100%;
+} 

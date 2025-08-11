@@ -134,10 +134,26 @@ body {
 
   &-title {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 1rem;
     color: var(--text-primary);
+    position: relative;
+    padding-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 84px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--zfit-green), var(--zfit-green-dark));
+      border-radius: 9999px;
+    }
   }
 
   &-subtitle {
@@ -155,6 +171,11 @@ body {
 
     &-title {
       font-size: 2rem;
+
+      &::after {
+        width: 64px;
+        height: 3px;
+      }
     }
 
     &-subtitle {

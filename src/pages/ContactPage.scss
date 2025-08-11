@@ -1,0 +1,11 @@
+.clean-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.clean-link:hover {
+  color: var(--zfit-green);
+  border-bottom-color: var(--zfit-green);
+} 

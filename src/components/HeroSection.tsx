@@ -1,9 +1,22 @@
 import { ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './HeroSection.scss';
 
 const HeroSection = () => {
   return (
     <section id="home" className="hero">
+      <Helmet>
+        <title>
+          ZFIT - The McDonald&apos;s of Healthy Food | High Protein & Anti-Aging
+          Meals
+        </title>
+        <meta
+          name="description"
+          content="Order healthy, high-protein meals online at ZFIT. The future McDonald's of healthy food with anti-aging options."
+        />
+        <link rel="canonical" href="https://zfit.in/" />
+      </Helmet>
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">
@@ -65,15 +78,24 @@ const HeroSection = () => {
                     <ExternalLink className="hero-external-link" />
                   </a>
                 </div>
+
+                <div className="hero-subscription-cta">
+                  <Link
+                    to="/subscription"
+                    className="subscription-cta-btn"
+                    aria-label="Explore food subscription plans"
+                  >
+                    Get Food Subscription
+                  </Link>
+                  <span className="subscription-cta-note">
+                    From ₹4,999/month · High protein · Customizable
+                  </span>
+                </div>
               </div>
             </div>
           </div>
           <div className="hero-image">
-            <img
-              src="/zfit.svg"
-              alt="ZFIT - The McDonald's of Healthy Food"
-              className="hero-logo"
-            />
+            <img src="/zfit.svg" alt="ZFIT" className="hero-logo" />
           </div>
         </div>
       </div>
